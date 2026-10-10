@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rohit Kumar Maurya — Full Stack Developer building fast, purposeful web applications with Java, Spring Boot and React."
+    />
+    <meta name="theme-color" content="#070707" />
+    <meta property="og:title" content="Rohit Maurya — Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Full Stack Developer portfolio — Java, Spring Boot, React, Next.js."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23070707'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='58' fill='%23d7b46b' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E"
+    />
+    <title>Rohit Kumar Maurya — Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <div>
+        <div class="loader-logo">ROHIT<span class="gold">.</span></div>
+        <div class="loader-line"><i></i></div>
+        <small class="gold">FULL STACK DEVELOPER</small>
+      </div>
+    </div>
+    <canvas id="particles"></canvas>
+    <div class="cursor" id="cursor"></div>
+    <div class="progress" id="progress"></div>
+
+    <nav>
+      <a href="#home" class="logo">ROHIT<span>.</span></a>
+      <div class="links">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a
+        ><a href="#certifications">Certs</a><a href="#experience">Journey</a
+        ><a href="#github">GitHub</a><a href="#contact" class="talk magnetic">Let's Talk</a>
+      </div>
+      <button
+        class="menu"
+        aria-label="Toggle menu"
+        onclick="document.querySelector('.links').classList.toggle('mobile')"
+      >
+        ☰
+      </button>
+    </nav>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="grid-bg"></div>
+        <div class="halo"></div>
+        <div class="wrap hero-grid">
+          <div class="reveal">
+            <div class="eyebrow">
+              <span class="live-dot"></span> Open to development opportunities
+            </div>
+            <h1>Engineering<br /><em>digital</em><br />experiences.</h1>
+            <p class="hero-copy">
+              I'm <strong>Rohit Kumar Maurya</strong>, A Full Stack Developer focused on
+              <span class="typing" id="typing"></span><span class="caret">&nbsp;</span>
+            </p>
+            <div class="actions">
+              <a href="#projects" class="btn primary magnetic">Explore My Work ↗</a
+              ><a href="resume.pdf" download class="btn magnetic">Download Resume ↓</a
+              ><a href="https://github.com/rohitmaurya563" target="_blank" class="btn magnetic"
+                >GitHub ↗</a
+              >
+            </div>
+          </div>
+          <div class="profile reveal" id="tilt">
+            <div class="photo">
+              <div class="photo-glow"></div>
+              <div class="profile-info">
+                <strong>Rohit Maurya</strong><br /><small>Full Stack Developer · India</small>
+              </div>
+            </div>
+            <div class="badge"><b>01</b>Developer<br />Portfolio</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <div class="kicker">01 — About</div>
+              <h2>Code with<br /><span class="serif gold">purpose.</span></h2>
+            </div>
+            <p>
+              I care about building products that are fast, useful, accessible and thoughtfully
+              designed.
+            </p>
+          </div>
+          <div class="about">
+            <div class="card reveal">
+              <p>
+                I'm a BCA student and aspiring software developer who enjoys turning ideas into
+                working digital experiences.
+              </p>
+              <p>
+                My learning journey is centered around Java, Spring Boot, React, JavaScript,
+                databases and real-world software development practices.
+              </p>
+              <p>
+                I believe the best developers never stop learning — so I build, break, debug and
+                improve every day.
+              </p>
+            </div>
+            <div class="stats reveal">
+              <div class="stat" data-count="10" data-suffix="+">
+                <strong>0</strong><span>Technologies</span>
+              </div>
+              <div class="stat" data-count="10" data-suffix="+">
+                <strong>0</strong><span>Projects & Builds</span>
+              </div>
+              <div class="stat" data-count="50" data-suffix="+">
+                <strong>0</strong><span>Coding Problems</span>
+              </div>
+              <div class="stat" data-count="1" data-suffix="">
+                <strong>0</strong><span>Developer Mindset</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <div class="kicker">02 — Why Me</div>
+              <h2>Built to<br /><span class="serif gold">grow.</span></h2>
+            </div>
+          </div>
+          <div class="why">
+            <div class="why-card reveal">
+              <div class="gold">01</div>
+              <b>Problem Solver</b>
+              <p>Break complex requirements into practical, testable solutions.</p>
+            </div>
+            <div class="why-card reveal">
+              <div class="gold">02</div>
+              <b>Fast Learner</b>
+              <p>Comfortable learning new tools through projects and experimentation.</p>
+            </div>
+            <div class="why-card reveal">
+              <div class="gold">03</div>
+              <b>Clean Code</b>
+              <p>Focused on readable structure, reusable components and maintainability.</p>
+            </div>
+            <div class="why-card reveal">
+              <div class="gold">04</div>
+              <b>Team Ready</b>
+              <p>Version control, communication and collaborative development mindset.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <div class="kicker">03 — Stack</div>
+              <h2>My technical<br /><span class="serif gold">toolkit.</span></h2>
+            </div>
+            <p>A growing full stack toolkit for building modern web applications.</p>
+          </div>
+          <div class="skills">
+            <div class="skill reveal" style="--w: 88%">
+              <div class="skill-icon">◈</div>
+              <b>HTML / CSS</b><small>Responsive UI</small>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill reveal" style="--w: 82%">
+              <div class="skill-icon">JS</div>
+              <b>JavaScript</b><small>Web interactions</small>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill reveal" style="--w: 72%">
+              <div class="skill-icon">⚛</div>
+              <b>React</b><small>Component UI</small>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill reveal" style="--w: 65%">
+              <div class="skill-icon">N</div>
+              <b>Next.js</b><small>Full stack React</small>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill reveal" style="--w: 78%">
+              <div class="skill-icon">☕</div>
+              <b>Java</b><small>OOP & DSA</small>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill reveal" style="--w: 64%">
+              <div class="skill-icon">SB</div>
+              <b>Spring Boot</b><small>REST backend</small>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill reveal" style="--w: 70%">
+              <div class="skill-icon">DB</div>
+              <b>MySQL</b><small>Database</small>
+              <div class="bar"><i></i></div>
+            </div>
+            <div class="skill reveal" style="--w: 82%">
+              <div class="skill-icon">⌘</div>
+              <b>Git / GitHub</b><small>Version control</small>
+              <div class="bar"><i></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <div class="kicker">04 — Credentials</div>
+              <h2>Certified &<br /><span class="serif gold">continuously learning.</span></h2>
+            </div>
+            <p>Formal coursework and self-directed certifications backing up the stack above.</p>
+          </div>
+          <div class="certs">
+            <div class="cert reveal">
+              <div class="cert-icon">◆</div>
+              <b>Java Programming Masterclass</b><small>Udemy</small><span class="cdate">2024</span>
+            </div>
+            <div class="cert reveal">
+              <div class="cert-icon">◆</div>
+              <b>Full Stack Web Development</b><small>Coursera</small
+              ><span class="cdate">2025</span>
+            </div>
+            <div class="cert reveal">
+              <div class="cert-icon">◆</div>
+              <b>JPMorgan Chase — Software Engineering</b><small>Forage Job Simulation</small
+              ><span class="cdate">2025</span>
+            </div>
+            <div class="cert reveal">
+              <div class="cert-icon">◆</div>
+              <b>SQL & Database Design</b><small>Self-paced coursework</small
+              ><span class="cdate">2024</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <div class="kicker">05 — Selected Work</div>
+              <h2>Projects that<br /><span class="serif gold">speak.</span></h2>
+            </div>
+            <p>
+              Showcase your best work here. Replace the placeholder visuals and links with your
+              actual deployed projects.
+            </p>
+          </div>
+          <div class="projects">
+            <article class="card project featured reveal">
+              <div class="project-visual">01</div>
+              <div class="project-body">
+                <div class="kicker">Featured Project</div>
+                <h3>Rojgar Hub</h3>
+                <p>
+                  A responsive job platform concept focused on connecting job seekers with
+                  opportunities through a simple, accessible experience.
+                </p>
+                <div class="tags">
+                  <span class="tag">HTML</span><span class="tag">CSS</span
+                  ><span class="tag">JavaScript</span><span class="tag">Responsive</span>
+                </div>
+                <a class="project-link" href="#" onclick="return false;">View Case Study ↗</a>
+              </div>
+            </article>
+            <article class="card project reveal">
+              <div class="project-visual">02</div>
+              <div class="project-body">
+                <h3>Music Player</h3>
+                <p>Interactive browser music player with controls and dynamic UI.</p>
+                <div class="tags">
+                  <span class="tag">JavaScript</span><span class="tag">CSS</span>
+                </div>
+                <a class="project-link" href="#" onclick="return false;">View Project ↗</a>
+              </div>
+            </article>
+            <article class="card project reveal">
+              <div class="project-visual">03</div>
+              <div class="project-body">
+                <h3>JPMC Midas</h3>
+                <p>Spring Boot project exploring transaction processing, Maven, Kafka and APIs.</p>
+                <div class="tags">
+                  <span class="tag">Java</span><span class="tag">Spring Boot</span
+                  ><span class="tag">Kafka</span>
+                </div>
+                <a
+                  class="project-link"
+                  href="https://github.com/rohitmaurya563/forage-midas"
+                  target="_blank"
+                  >GitHub ↗</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <div class="kicker">06 — Journey</div>
+              <h2>Learning the<br /><span class="serif gold">craft.</span></h2>
+            </div>
+          </div>
+          <div class="card timeline reveal">
+            <div class="event">
+              <span class="date">Current · BCA</span>
+              <h3>Technical Education & Research Institute</h3>
+              <p>
+                Building foundations in programming, software development, databases and computer
+                science.
+              </p>
+            </div>
+            <div class="event">
+              <span class="date">Development</span>
+              <h3>Full Stack Learning</h3>
+              <p>
+                Developing skills across Java, Spring Boot, React, JavaScript, SQL, Git and APIs.
+              </p>
+            </div>
+            <div class="event">
+              <span class="date">Practical Work</span>
+              <h3>Projects & Challenges</h3>
+              <p>
+                Using real projects and coding problems to turn concepts into practical engineering
+                ability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="github">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <div class="kicker">07 — Open Source</div>
+              <h2>My GitHub<br /><span class="serif gold">workspace.</span></h2>
+            </div>
+            <p>
+              Connect this section to the GitHub API later for live profile and repository data.
+            </p>
+          </div>
+          <div class="github">
+            <div class="card github-main reveal">
+              <h3>@rohitmaurya563</h3>
+              <p style="color: var(--muted); margin-top: 6px">
+                Building, learning and sharing code.
+              </p>
+              <div class="github-stats">
+                <div class="gstat"><b>Public</b><span>Repositories</span></div>
+                <div class="gstat"><b>—</b><span>Followers</span></div>
+                <div class="gstat"><b>Java</b><span>Focus</span></div>
+              </div>
+              <div class="heatmap" id="heatmap"></div>
+              <a class="project-link" href="https://github.com/rohitmaurya563" target="_blank"
+                >Visit GitHub ↗</a
+              >
+            </div>
+            <div class="repos reveal">
+              <div class="repo">
+                <div>
+                  <b>forage-midas</b>
+                  <p>JPMC Advanced Software Engineering project</p>
+                </div>
+                <span class="gold">Java</span>
+              </div>
+              <div class="repo">
+                <div>
+                  <b>Portfolio</b>
+                  <p>Premium developer portfolio</p>
+                </div>
+                <span class="gold">Web</span>
+              </div>
+              <div class="repo">
+                <div>
+                  <b>More projects</b>
+                  <p>Add your strongest repositories here</p>
+                </div>
+                <span class="gold">↗</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <div class="kicker">08 — Feedback</div>
+              <h2>What people<br /><span class="serif gold">say.</span></h2>
+            </div>
+            <p>
+              Placeholder quotes — swap in real feedback from mentors, teammates or clients before
+              publishing.
+            </p>
+          </div>
+          <div class="testimonials">
+            <div class="card tcard reveal">
+              <span class="quote-mark">"</span>
+              <p>
+                Rohit picks up new tools fast and doesn't stop at "it works" — he goes back and
+                cleans things up.
+              </p>
+              <div class="tperson">
+                <div class="tavatar">S</div>
+                <div><strong>Senior Mentor</strong><span>Project Guide</span></div>
+              </div>
+            </div>
+            <div class="card tcard reveal">
+              <span class="quote-mark">"</span>
+              <p>
+                Good instincts for structuring a backend, and asks the right questions before
+                writing code.
+              </p>
+              <div class="tperson">
+                <div class="tavatar">T</div>
+                <div><strong>Team Lead</strong><span>Internship</span></div>
+              </div>
+            </div>
+            <div class="card tcard reveal">
+              <span class="quote-mark">"</span>
+              <p>
+                Reliable, communicates clearly, and genuinely enjoys debugging — rare combination.
+              </p>
+              <div class="tperson">
+                <div class="tavatar">P</div>
+                <div><strong>Peer Developer</strong><span>Collaborator</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <div class="kicker">09 — Contact</div>
+              <h2>Let's create<br /><span class="serif gold">impact.</span></h2>
+            </div>
+            <p>Open to internships, entry-level development roles and interesting projects.</p>
+          </div>
+          <div class="contact">
+            <div class="card reveal">
+              <div class="contact-list">
+                <div class="contact-item">
+                  <span>Email</span><strong>rkumarmaurya2323@gmail.com</strong>
+                </div>
+                <div class="contact-item"><span>Phone</span><strong>+91 8423880563</strong></div>
+                <div class="contact-item">
+                  <span>Location</span><strong>Uttar Pradesh, India</strong>
+                </div>
+                <div class="contact-item"><span>GitHub</span><strong>rohitmaurya563</strong></div>
+                <div class="contact-item"><span>LinkedIn</span><strong>rohit-maurya  </strong></div>
+              </div>
+            </div>
+            <div class="card reveal">
+              <form onsubmit="sendMessage(event)">
+                <input required placeholder="Your name" /><input
+                  required
+                  type="email"
+                  placeholder="Email address"
+                /><input required placeholder="Subject" /><textarea
+                  required
+                  placeholder="Tell me about your opportunity or project..."
+                ></textarea
+                ><button class="btn primary magnetic" type="submit">Send Message ↗</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-row">
+        <div>
+          © <span id="yr"></span> <span class="gold">Rohit Maurya</span> · Built with intention.
+        </div>
+        <div class="social">
+          <a href="https://github.com/rohitmaurya563" target="_blank">GitHub</a
+          ><a href="#" onclick="return false;">LinkedIn</a><a href="#home">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      id="toTop"
+      aria-label="Back to top"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      ↑
+    </button>
+    <div
+      id="toast"
+      style="
+        position: fixed;
+        left: 50%;
+        bottom: 26px;
+        transform: translate(-50%, 20px);
+        background: #0c0c0c;
+        border: 1px solid var(--line);
+        color: var(--text);
+        padding: 14px 22px;
+        border-radius: 14px;
+        font-size: 0.82rem;
+        z-index: 3000;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.35s;
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+      "
+    ></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
