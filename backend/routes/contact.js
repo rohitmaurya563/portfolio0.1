@@ -11,7 +11,7 @@ router.post('/', contactLimiter, validateContact, async (req, res) => {
 
   try {
     // If SMTP isn't configured yet, don't crash — log instead so local dev still works.
-    if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
+   if (!process.env.MAIL_SCRIPT_URL || !process.env.MAIL_SCRIPT_SECRET) {
       console.log('--- Contact form submission (SMTP not configured, logging only) ---');
       console.log({ name, email, subject, message });
       return res.status(200).json({
